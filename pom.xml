@@ -69,9 +69,15 @@
             <plugin>
                 <groupId>org.codehaus.cargo</groupId>
                 <artifactId>cargo-maven2-plugin</artifactId>
-                <version>1.2.0</version>
+                <version>1.4.10</version>
                 <configuration>
                     <type>standalone</type>
+                    <container>
+                        <containerId>tomcat8x</containerId>
+                        <zipUrlInstaller>
+                            <url>http://apache.petsads.us/tomcat/tomcat-8/v8.0.12/bin/apache-tomcat-8.0.12.zip</url>
+                        </zipUrlInstaller>
+                    </container>
                     <configuration>
                         <properties>
                             <cargo.servlet.port>10001</cargo.servlet.port>

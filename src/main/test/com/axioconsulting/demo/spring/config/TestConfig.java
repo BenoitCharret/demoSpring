@@ -15,11 +15,12 @@ public class TestConfig {
 
     @Bean
     public URI getSiteBase() throws URISyntaxException {
-        return new URI("http://localhost:10001/demo-spring-1.0-SNAPSHOT");
+        return new URI("http://localhost:10001/demo-spring");
     }
-    @Bean(destroyMethod="quit")
+
+    @Bean(destroyMethod = "quit")
     public FirefoxDriver getDrv() {
         return new FirefoxDriver();
     }
-    }
+}
 
